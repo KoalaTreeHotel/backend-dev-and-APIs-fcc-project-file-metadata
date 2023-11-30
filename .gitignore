@@ -5,6 +5,7 @@
 *.swp
 *.zip
 *.7z
+public/uploads/*
 
 ### Node ###
 # Logs
