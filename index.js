@@ -20,10 +20,11 @@ app.listen(port, function () {
 });
 // SKELETON END
 
-// going to be using multer middleware module for file uploading
+// going to be using multer middleware module for file uploading.
 // multer usage: https://www.npmjs.com/package/multer
 const myMulter = require("multer");
 
+// multer configuration: filename construction and location to save uploaded file
 let storageInfo = myMulter.diskStorage(
     {
         // setting destination for multer uploaded file
@@ -36,22 +37,22 @@ let storageInfo = myMulter.diskStorage(
         }
     }
 );
-
+// configured multer instance
 const myUpload = myMulter({"storage": storageInfo});
 
-// multer middleware for uploading a single file goes between
-// the route and the req/res callback. get the name of the file
-// to upload (upfile) from the form in the html form
+// multer middleware for uploading a single file (goes between
+// the route and the req/res callback). get the name of the file
+// to upload (upfile) from the html form 
 app.post("/api/fileanalyse", myUpload.single("upfile"), (req, res) => {
-    // output file info
+    // output file info to console
     console.log("req.file = ");
     console.log(req.file);
     console.log("req.body = ");
     console.log(req.body);
-    // grab fields requested by fcc
+    // grab the fields requested by fcc
     const theSize = req.file.size;
     const theName = req.file.originalname;
     const theType = req.file.mimetype;
     // respond with json data
-    res.json({ name: theName, type: theType, size: theSize });
+    res.json({ "name": theName, "type": theType, "size": theSize });
 });
