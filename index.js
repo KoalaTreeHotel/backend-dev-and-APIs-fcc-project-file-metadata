@@ -21,5 +21,16 @@ app.listen(port, function () {
 // SKELETON END
 
 // going to be using multer middleware module for file uploading
+// multer usage: https://www.npmjs.com/package/multer
 const myMulter = require("multer");
 const myUpload = myMulter();
+
+// multer middleware for uploading a single file goes between
+// the route and the req/res callback. get the name of the file
+// to upload (upfile) from the form in the html form
+app.post("/api/fileanalyse", myUpload.single("upfile"), (req, res) => {
+    console.log("req.file = ");
+    console.log(req.file);
+    console.log("req.body = ");
+    console.log(req.body);
+});
