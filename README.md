@@ -5,3 +5,5 @@ This is the boilerplate for the File Metadata Microservice project. Instructions
 
 npm install
 npm run start
+
+Upload code to replit.com or glitch.com
