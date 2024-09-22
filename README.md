@@ -1,6 +1,6 @@
 # File Metadata Microservice
 
-Microservice for printing the meta data for an uploaded file. Node, Express and Multer used. FCC final project. 
+Microservice for printing the meta data for an uploaded file. Node, Express and Multer used. FCC Backend API course final project. 
 
 Instructions:
 
