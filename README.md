@@ -1,9 +1,10 @@
 # File Metadata Microservice
 
-This is the boilerplate for the File Metadata Microservice project. Instructions for building your project can be found at https://www.freecodecamp.org/learn/apis-and-microservices/apis-and-microservices-projects/file-metadata-microservice
+Microservice for printing the meta data for an uploaded file. Node, Express and Multer used. FCC final project. 
 
+Instructions:
 
-npm install
-npm run start
+  - npm install
+  - npm run start
 
-Upload code to replit.com or glitch.com
+Upload code to replit.com or glitch.com for FCC verification.
