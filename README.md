@@ -9,6 +9,8 @@ Instructions:
 
 See this code in production:
 
-- <https://replit.com/@sfraser-dev/boilerplate-project-filemetadata>
+- Replit:
+  - <https://replit.com/@sfraser-dev/boilerplate-project-filemetadata>
+- Gitpod:
+    - <https://gitpod.io/#https://github.com/sfraser-dev/javascript-node-express-file-metadata-microservice> 
 
-*Need to upload code to replit.com or glitch.com for FCC verification.*
